@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CiArpeSDS – lo scanner Uniden SDS200 dal PC</title>
+<meta name="description" content="CiArpeSDS 0.9 Beta: comanda lo scanner Uniden SDS200 dalla rete di casa. Audio in rete, cascata RF, ricerca, lista canali, registrazioni, ascolto dal telefono. Beta gratuita 14 giorni.">
+<link rel="icon" href="favicon.png">
+<style>
+  /* Pagina statica autonoma: nessuno script o servizio esterno. */
+  :root {
+    --navy: #0b1d33; --navy2: #12355c; --panel: #13283f; --line: #24476d;
+    --text: #e6eef8; --muted: #a9bdd4; --cyan: #5bd0ff; --yellow: #ffd228; --green: #6dffbf;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--navy); color: var(--text);
+         font: 16px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif; }
+  a { color: var(--cyan); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { background: linear-gradient(180deg, var(--navy2), var(--navy)); padding: 48px 0 32px; }
+  .hero { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+  .hero img { width: 128px; height: 128px; }
+  h1 { font-size: 2.3rem; margin: 0; line-height: 1.15; }
+  h1 small { display: block; font-size: 1rem; color: var(--muted); font-weight: 400; margin-top: 6px; }
+  h2 { font-size: 1.5rem; margin: 44px 0 14px; color: var(--yellow); }
+  .lead { font-size: 1.15rem; color: var(--muted); max-width: 640px; }
+  .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+  .btn { display: inline-block; padding: 13px 22px; border-radius: 10px; font-weight: 700;
+         text-decoration: none; border: 2px solid var(--cyan); color: var(--cyan); }
+  .btn.main { background: var(--yellow); color: #1b1b1b; border-color: var(--yellow); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; color: var(--cyan); }
+  .card p { margin: 0; color: var(--muted); }
+  ul { padding-left: 20px; }
+  ol.steps { counter-reset: s; list-style: none; padding: 0; }
+  ol.steps li { counter-increment: s; position: relative; padding: 0 0 14px 46px; }
+  ol.steps li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 32px; height: 32px;
+                        border-radius: 50%; background: var(--cyan); color: var(--navy); font-weight: 800;
+                        display: flex; align-items: center; justify-content: center; }
+  .notice { border-left: 4px solid var(--yellow); background: var(--panel); padding: 14px 18px; border-radius: 0 10px 10px 0; }
+  code { background: #0a1626; padding: 1px 6px; border-radius: 4px; }
+  footer { margin-top: 56px; padding: 26px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  @media (max-width: 600px) { h1 { font-size: 1.8rem; } .hero img { width: 88px; height: 88px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hero">
+    <img src="icona.png" alt="Icona CiArpeSDS">
+    <div>
+      <h1>CiArpeSDS 0.9 Beta<small>Lo scanner Uniden SDS200 comandato dal PC, sulla rete di casa</small></h1>
+      <p class="lead">Ascolta, cerca, guarda lo spettro e gestisci la lista dei canali del tuo SDS200 da Windows,
+        senza cavi audio: basta il cavo di rete. E con il telefono lo ascolti anche dall'altra stanza.</p>
+      <div class="buttons">
+        <a class="btn main" href="https://github.com/ciarpe2/CiArpeSDS/releases/tag/v0.9.0-beta">Scarica la beta gratuita</a>
+        <a class="btn" href="#come">Come si usa</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2>Cosa fa</h2>
+  <div class="grid">
+    <div class="card"><h3>Audio in rete, subito</h3><p>All'avvio senti lo scanner dal PC. Filtri per bassi e alti, taglio dei subtoni, filtro voce e riduzione del fruscio che conserva le parole.</p></div>
+    <div class="card"><h3>Cascata RF</h3><p>Lo spettro interno dello SDS200 fino a 17 MHz di ampiezza: clic su un picco e lo ascolti, manopola e passi regolabili.</p></div>
+    <div class="card"><h3>Scansione sotto controllo</h3><p>Blocca, riprendi, ▲▼ canale per canale, AVOID e salto automatico dei canali sempre in trasmissione: la scansione non resta mai bloccata.</p></div>
+    <div class="card"><h3>Ricerca DA–A</h3><p>Scrivi due frequenze e lo scanner cerca lì; oppure usa i 10 intervalli di ricerca già impostati nello scanner.</p></div>
+    <div class="card"><h3>Lista dei canali</h3><p>Editor a foglio come ProScan: modifica, aggiungi, esporta per Excel, leggi e scrivi lo scanner via USB con copia di sicurezza.</p></div>
+    <div class="card"><h3>Ascolto dal telefono</h3><p>Una pagina web sulla rete di casa: audio, frequenza, canale, livello e comandi dello scanner dal cellulare.</p></div>
+    <div class="card"><h3>Registrazioni e archivio</h3><p>Una registrazione per frequenza al giorno, attività, statistiche, avvisi sui canali che ti interessano, TGID/UID DMR.</p></div>
+    <div class="card"><h3>Profili e disposizione</h3><p>Gruppi di sistemi da scansionare salvati per nome; finestre, divisori e colonne restano come li lasci.</p></div>
+  </div>
+
+  <h2>Requisiti</h2>
+  <ul>
+    <li>Windows 10 o 11 a 64 bit.</li>
+    <li>Scanner <b>Uniden SDS200</b> collegato alla rete di casa (stessa rete del PC).</li>
+    <li>Lo scanner accetta un solo programma alla volta sull'audio: chiudi ProScan mentre usi CiArpeSDS.</li>
+  </ul>
+
+  <h2 id="come">Come si usa</h2>
+  <ol class="steps">
+    <li>Scarica <code>CiArpeSDS_beta_…zip</code> dalla <a href="https://github.com/ciarpe2/CiArpeSDS/releases/tag/v0.9.0-beta">pagina della beta</a> ed estrai tutta la cartella.</li>
+    <li>Avvia <code>CiArpeSDS.exe</code>. Windows può mostrare "Editore sconosciuto": <i>Ulteriori informazioni</i> → <i>Esegui comunque</i>.</li>
+    <li>Al primo avvio scrivi l'indirizzo IP dello scanner (lo trovi nel menu di rete dello SDS200).</li>
+    <li>Premi <b>INFO</b> nel programma per la guida completa. Senza scanner puoi provarlo con <code>CiArpeSDS.exe --simulatore</code>.</li>
+  </ol>
+
+  <div class="notice">
+    <b>Beta di prova:</b> funziona per 14 giorni dalla pubblicazione, poi mostra solo l'avviso di scadenza.
+    Contiene una lista di esempio con frequenze radioamatori pubbliche; la scansione usa la lista caricata nel tuo
+    scanner. Decoder POCSAG/APRS/ACARS non inclusi in questa beta.
+  </div>
+
+  <h2>Segnalazioni</h2>
+  <p>Problemi, idee, schermate: <a href="mailto:ciarpeservizio@gmail.com">ciarpeservizio@gmail.com</a>
+    oppure nella <a href="https://github.com/ciarpe2/CiArpeSDS/issues">pagina delle segnalazioni</a>.
+    Vedi la <a href="https://github.com/ciarpe2/CiArpeSDS/blob/main/BETA_TESTER_GUIDE.md">guida per i beta tester</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    CiArpeSDS è un programma indipendente, non affiliato a Uniden. Uniden e SDS200 sono marchi dei rispettivi
+    proprietari. Beta fornita senza garanzia. Componenti di terze parti: vedi <code>TERZE_PARTI.txt</code> nel pacchetto.
+  </div>
+</footer>
+</body>
+</html>
