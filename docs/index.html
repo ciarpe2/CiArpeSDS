@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CiArpeSDS – lo scanner Uniden SDS200 dal PC</title>
-<meta name="description" content="CiArpeSDS 0.9 Beta: comanda lo scanner Uniden SDS200 dalla rete di casa. Audio in rete, cascata RF, ricerca, lista canali, registrazioni, ascolto dal telefono. Beta gratuita 14 giorni.">
+<meta name="description" content="CiArpeSDS 0.9.5 Beta: comanda lo scanner Uniden SDS200 dalla rete di casa. Audio in rete, cascata RF, ricerca, lista canali, registrazioni, ascolto dal telefono. Beta gratuita 14 giorni.">
 <link rel="icon" href="favicon.png">
 <style>
   /* Pagina statica autonoma: nessuno script o servizio esterno. */
@@ -49,11 +49,11 @@
   <div class="wrap hero">
     <img src="icona.png" alt="Icona CiArpeSDS">
     <div>
-      <h1>CiArpeSDS 0.9 Beta<small>Lo scanner Uniden SDS200 comandato dal PC, sulla rete di casa</small></h1>
+      <h1>CiArpeSDS 0.9.5 Beta<small>Lo scanner Uniden SDS200 comandato dal PC, sulla rete di casa</small></h1>
       <p class="lead">Ascolta, cerca, guarda lo spettro e gestisci la lista dei canali del tuo SDS200 da Windows,
         senza cavi audio: basta il cavo di rete. E con il telefono lo ascolti anche dall'altra stanza.</p>
       <div class="buttons">
-        <a class="btn main" href="https://github.com/ciarpe2/CiArpeSDS/releases/tag/v0.9.0-beta">Scarica la beta gratuita</a>
+        <a class="btn main" href="https://github.com/ciarpe2/CiArpeSDS/releases/tag/v0.9.5-beta">Scarica la beta gratuita</a>
         <a class="btn" href="#come">Come si usa</a>
       </div>
     </div>
@@ -70,6 +70,9 @@
     <div class="card"><h3>Lista dei canali</h3><p>Editor a foglio come ProScan: modifica, aggiungi, esporta per Excel, leggi e scrivi lo scanner via USB con copia di sicurezza.</p></div>
     <div class="card"><h3>Ascolto dal telefono</h3><p>Una pagina web sulla rete di casa: audio, frequenza, canale, livello e comandi dello scanner dal cellulare.</p></div>
     <div class="card"><h3>Registrazioni e archivio</h3><p>Una registrazione per frequenza al giorno, attività, statistiche, avvisi sui canali che ti interessano, TGID/UID DMR.</p></div>
+    <div class="card"><h3>Display dello scanner</h3><p>Lo schermo dello SDS200 riprodotto dal vivo nel programma, con un simbolo grafico per ogni tipo di gruppo (Vigili del Fuoco, 118, nautica, aeronautica...).</p></div>
+    <div class="card"><h3>Lista via USB automatica</h3><p>«Leggi» e «Scrivi» mettono da soli lo scanner in modalità USB, aspettano l'unità e fanno il resto, con copia di sicurezza.</p></div>
+    <div class="card"><h3>Ascolto più pulito</h3><p>Ricampionamento di qualità che toglie il timbro metallico della voce; scansione con tempi per voce e segnali digitali e avviso se lo scanner non risponde.</p></div>
     <div class="card"><h3>Profili e disposizione</h3><p>Gruppi di sistemi da scansionare salvati per nome; finestre, divisori e colonne restano come li lasci.</p></div>
   </div>
 
@@ -82,7 +85,7 @@
 
   <h2 id="come">Come si usa</h2>
   <ol class="steps">
-    <li>Scarica <code>CiArpeSDS_beta_…zip</code> dalla <a href="https://github.com/ciarpe2/CiArpeSDS/releases/tag/v0.9.0-beta">pagina della beta</a> ed estrai tutta la cartella.</li>
+    <li>Scarica <code>CiArpeSDS_beta_…zip</code> dalla <a href="https://github.com/ciarpe2/CiArpeSDS/releases/tag/v0.9.5-beta">pagina della beta</a> ed estrai tutta la cartella.</li>
     <li>Avvia <code>CiArpeSDS.exe</code>. Windows può mostrare "Editore sconosciuto": <i>Ulteriori informazioni</i> → <i>Esegui comunque</i>.</li>
     <li>Al primo avvio scrivi l'indirizzo IP dello scanner (lo trovi nel menu di rete dello SDS200).</li>
     <li>Premi <b>INFO</b> nel programma per la guida completa. Senza scanner puoi provarlo con <code>CiArpeSDS.exe --simulatore</code>.</li>
@@ -91,7 +94,7 @@
   <div class="notice">
     <b>Beta di prova:</b> funziona per 14 giorni dalla pubblicazione, poi mostra solo l'avviso di scadenza.
     Contiene una lista di esempio con frequenze radioamatori pubbliche; la scansione usa la lista caricata nel tuo
-    scanner. Decoder POCSAG/APRS/ACARS non inclusi in questa beta.
+    scanner. Incluso il decoder DSC; POCSAG/APRS/ACARS richiedono multimon-ng installato a parte.
   </div>
 
   <h2>Segnalazioni</h2>

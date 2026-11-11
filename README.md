@@ -4,16 +4,16 @@ Lo scanner **Uniden SDS200** comandato dal PC sulla rete di casa: audio in rete,
 ricerca DA–A, lista dei canali con lettura/scrittura USB, registrazioni, avvisi e ascolto dal telefono.
 Windows 10/11 a 64 bit.
 
-## Versione attuale: 0.9.0 Beta (gratuita, 14 giorni)
+## Versione attuale: 0.9.5 Beta (gratuita, 14 giorni)
 
 - Pagina del programma: https://ciarpe2.github.io/CiArpeSDS/
-- Download: https://github.com/ciarpe2/CiArpeSDS/releases/tag/v0.9.0-beta
+- Download: https://github.com/ciarpe2/CiArpeSDS/releases/tag/v0.9.5-beta
 
 Estrai lo ZIP e avvia `CiArpeSDS.exe`; al primo avvio scrivi l'indirizzo IP dello scanner. Guida completa:
 tasto INFO nel programma. Windows può mostrare "Editore sconosciuto": *Ulteriori informazioni* → *Esegui
 comunque*. La beta scade 14 giorni dopo la pubblicazione.
 
-Guida per chi prova la beta: [BETA_TESTER_GUIDE.md](BETA_TESTER_GUIDE.md) · Novità: [RELEASE_NOTES_0.9.0_BETA.md](RELEASE_NOTES_0.9.0_BETA.md)
+Guida per chi prova la beta: [BETA_TESTER_GUIDE.md](BETA_TESTER_GUIDE.md) · Novità: [RELEASE_NOTES_0.9.5_BETA.md](RELEASE_NOTES_0.9.5_BETA.md)
 
 Contatti: ciarpeservizio@gmail.com
 

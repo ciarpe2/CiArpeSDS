@@ -8,12 +8,14 @@
 6. Prova WATERFALL: clic su un picco, manopola, ZOOM.
 7. Prova la ricerca DA–A su una banda limitata.
 8. Prova i filtri audio (Riduci fruscio, Filtro voce) e la registrazione.
-9. Facoltativo: Impostazioni → Ascolto da remoto, poi apri l'indirizzo dal telefono.
+9. Apri la scheda «Display SDS200»: lo schermo dello scanner con il simbolo del gruppo.
+10. Con il cavo USB collegato prova «Scanner USB › Leggi dallo scanner» (entra da solo in modalità USB).
+11. Facoltativo: Impostazioni → Ascolto da remoto, poi apri l'indirizzo dal telefono.
 
 ## Segnalazione consigliata
 
 ```text
-Versione: 0.9.0 Beta
+Versione: 0.9.5 Beta
 Scanner: SDS200, firmware ...
 Cosa facevo: Riprendi scansione su 145.500
 Cosa è successo: ...
