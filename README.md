@@ -6,7 +6,7 @@ Windows 10/11 a 64 bit.
 
 ## Versione attuale: 1.0.0 – prova gratuita 14 giorni, licenza 29 €
 
-- Sito: https://ciarpe2.github.io/CiArpeSDS/
+- Sito: https://www.criservizi.it/ciarpesds/ (anche https://ciarpe2.github.io/CiArpeSDS/)
 - Download: https://github.com/ciarpe2/CiArpeSDS/releases/tag/v1.0.0
 
 Estrai lo ZIP e avvia `CiArpeSDS.exe`; al primo avvio scrivi l'indirizzo IP dello scanner. Guida completa:
