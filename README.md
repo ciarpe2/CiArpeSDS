@@ -14,6 +14,8 @@ tasto INFO nel programma. Windows può mostrare "Editore sconosciuto": *Ulterior
 comunque*. La prova dura 14 giorni dal primo avvio; poi la licenza (29 € una tantum, PayPal) si attiva con il
 pulsante ATTIVA. Condizioni: https://ciarpe2.github.io/CiArpeSDS/condizioni.html
 
+Video: https://youtu.be/J6as4_xAbgg
+
 Novità: [1.0.1](RELEASE_NOTES_1.0.1.md) · [1.0.0](RELEASE_NOTES_1.0.0.md)
 
 Contatti: ciarpeservizio@gmail.com
